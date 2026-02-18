@@ -37,7 +37,7 @@ Let's use Copilot to change the website to display signed up students under each
 
 1. At the bottom of Copilot Chat window, use the dropdown to switch to **Edit** mode.
 
-   <img width="350" alt="image" src="../images/edit-mode-dropdown.png" />
+   <img width="350" alt="image" src="https://github.com/carolinemb2/year-of-the-horse/blob/main/.github/images/edit-mode-dropdown.png?raw=true" />
 
 1. Open the files related to our webpage then drag each editor window (or file) to the chat panel, informing Copilot to use them as context.
 
@@ -45,7 +45,7 @@ Let's use Copilot to change the website to display signed up students under each
    - `src/static/index.html`
    - `src/static/styles.css`
 
-   <img width="400" alt="image showing files added to context" src="../images/files-added-to-context.png" />
+   <img width="400" alt="image showing files added to context" src="https://github.com/carolinemb2/year-of-the-horse/blob/main/.github/images/files-added-to-context.png?raw=true" />
 
    > 💡 **Tip:** You can also use the **Add Context...** button to provide other sources of context items, like a GitHub issue, the entire codebase, or the results of a terminal window.
 
@@ -62,14 +62,14 @@ Let's use Copilot to change the website to display signed up students under each
    - An extra icon has appeared next to the file names and open editor windows indicating they have suggested edits.
    - A suggested edits panel has appeared in the bottom right of the editor window providing controls to jump to the recommended changes.
 
-      <img width="200" alt="files with icons indicating they have been edited" src="../images/edited-files-icons.png" />
+      <img width="200" alt="files with icons indicating they have been edited" src="https://github.com/carolinemb2/year-of-the-horse/blob/main/.github/images/edited-files-icons.png?raw=true" />
 
-      <img width="250" alt="edit navigation panel" src="../images/edit-navigation-panel.png" />
+      <img width="250" alt="edit navigation panel" src="https://github.com/carolinemb2/year-of-the-horse/blob/main/.github/images/edit-navigation-panel.png?raw=true" />
 
 
 1. Before we simply accept the changes, please check our website again and verify everything is updated as expected. Here is an example of an updated activity card. You may need to restart the app or refresh the page.
 
-   <img width="350" alt="Activity card with participant info" src="../images/activity-card-with-participants.png" />
+   <img width="350" alt="Activity card with participant info" src="https://github.com/carolinemb2/year-of-the-horse/blob/main/.github/images/activity-card-with-participants.png?raw=true" />
 
    > 🪧 **Note:** Your activity card may look different. Copilot won't always produce the same results.
 

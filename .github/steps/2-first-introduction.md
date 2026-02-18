@@ -176,7 +176,7 @@ Nice work fixing that bug and expanding the example activities! Now let's get ou
 
 1. Find the `app.py` file and press the `+` sign to collect your changes together in the staging area.
 
-   ![image](../images/staging-changes-icon.png)
+   ![image](https://github.com/carolinemb2/year-of-the-horse/blob/main/.github/images/staging-changes-icon.png?raw=true)
 
 1. Above the list of staged changes, find the **Message** text box, but **don't enter anything** for now.
 

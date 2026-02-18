@@ -39,11 +39,11 @@ If you don't get the desired results, you can try other models or provided follo
 
 1. Open the **Copilot** chat panel and use the dropdown menu to switch to **Agent** mode.
 
-   <img width="250" alt="agent mode" src="../images/agent-mode-dropdown.png" />
+   <img width="250" alt="agent mode" src="https://github.com/carolinemb2/year-of-the-horse/blob/main/.github/images/agent-mode-dropdown.png?raw=true" />
 
 1. Click on the **Tools** icon and explore all Tools currently available to Copilot Agent Mode.
 
-   <img width="250"  alt="tools icon" src="../images/tools-icon.png" />
+   <img width="250"  alt="tools icon" src="https://github.com/carolinemb2/year-of-the-horse/blob/main/.github/images/tools-icon.png?raw=true" />
 
 
 1. Time for our test! Let's ask Copilot to add functionality for removing participants.
