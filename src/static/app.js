@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const spotsLeft = details.max_participants - details.participants.length;
 
         const participantsList = details.participants.length > 0
-          ? `<ul class="participants-list">${details.participants.map(p => `<li>${p}</li>`).join("")}</ul>`
+          ? `<ul class="participants-list">${details.participants.map(p => `<li><span class="delete-icon" data-activity="${name}" data-email="${p}" title="Unregister">🗑️</span> ${p}</li>`).join("")}</ul>`
           : `<p class="no-participants">No participants yet.</p>`;
 
         activityCard.innerHTML = `
@@ -42,6 +42,25 @@ document.addEventListener("DOMContentLoaded", () => {
         option.value = name;
         option.textContent = name;
         activitySelect.appendChild(option);
+      });
+
+      // Add event listeners for delete icons
+      document.querySelectorAll(".delete-icon").forEach((icon) => {
+        icon.addEventListener("click", async () => {
+          const activityName = icon.dataset.activity;
+          const email = icon.dataset.email;
+          try {
+            const response = await fetch(
+              `/activities/${encodeURIComponent(activityName)}/signup?email=${encodeURIComponent(email)}`,
+              { method: "DELETE" }
+            );
+            if (response.ok) {
+              fetchActivities();
+            }
+          } catch (error) {
+            console.error("Error unregistering:", error);
+          }
+        });
       });
     } catch (error) {
       activitiesList.innerHTML = "<p>Failed to load activities. Please try again later.</p>";
@@ -70,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         messageDiv.textContent = result.message;
         messageDiv.className = "success";
         signupForm.reset();
+        fetchActivities();
       } else {
         messageDiv.textContent = result.detail || "An error occurred";
         messageDiv.className = "error";
